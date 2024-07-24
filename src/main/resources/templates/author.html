@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Author Page</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <h1>Authors</h1>
+    <form id="authorForm">
+        <div>
+            <label>Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label>DOB:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+        <div>
+            <label>Biology:</label>
+            <input type="text" id="biology" name="biology">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <table id="authorList" style="width: 40%;">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Date of birth</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <a href="/books">Create book</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

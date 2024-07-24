@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Page</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <h1>Books</h1>
+    <form id="bookForm">
+        <div>
+            <label>Code:</label>
+            <input type="text" id="code" name="code" required>
+        </div>
+        <div>
+            <label>Title:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div>
+            <label>Quantity:</label>
+            <input type="text" id="quantity" name="quantity" required>
+        </div>
+        <div>
+            <label>Authors:</label>
+            <select id="authorNames" name="authorNames" multiple="multiple" style="width: 30%">
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <table id="bookList" style="width: 40%;">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Title</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <a href="/authors">Create Author</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
